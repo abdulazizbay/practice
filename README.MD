@@ -17,3 +17,15 @@ git push origin master
 git pull origin master
 
 ```
+
+## PYTHON FOUNDATIONS
+
+- Primitive variables
+- Functions
+- Objects
+- Classes
+- Class deep dive
+- Operations
+- Conditions
+- Loops
+- ...

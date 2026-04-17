@@ -43,12 +43,12 @@ result3 = give_greet(name="abu")
 print(result3)
 
 print("=== Scope ===")
-b = 100
+b = 100#3
 
 
-def calculate(a):
-    c = a + b
+def calculate(a): #3
+    c = a + b #1
     print(c)
 
 
-calculate(2)
+calculate(2) #2

@@ -30,3 +30,4 @@ print(f"name: {name}, hobby: {hobby}, balance: {balance}")
 del person_obj["isSingle"]
 for key in person_obj:
     print(f"key: {key} => value: {person_obj[key]}")
+

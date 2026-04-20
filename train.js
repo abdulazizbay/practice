@@ -6,19 +6,63 @@
 // MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 
 // Yechim
-function countDigits(a) {
-  let counter = 0;
-  for (let char of a) {
-    if (char >= "0" && char <= "9") {
-      counter++;
+// function countDigits(a) {
+//   let counter = 0;
+//   for (let char of a) {
+//     if (char >= "0" && char <= "9") {
+//       counter++;
+//     }
+//   }
+//   return counter;
+// }
+
+// const result = countDigits("ad2a54y79wet0sfgb9");
+// console.log(result);
+
+// =====================================================
+
+// Challenge Task Animal Challenge
+const animal_list = [
+  "fox",
+  "ant",
+  "bird",
+  "lion",
+  "wolf",
+  "deer",
+  "bear",
+  "frog",
+  "hen",
+  "mole",
+  "duck",
+  "goat",
+  "dog",
+  "cat",
+  "bat",
+  "cock",
+  "cow",
+];
+
+function findAnimals(txt) {
+  let all_list = [];
+  for (const animal of animal_list) {
+    let isMatch = true;
+    console.log(animal);
+     for (const char of animal) {
+      console.log(char);
+      if (!txt.includes(char)) {
+        isMatch = false;
+      }
+    } 
+    if (isMatch) {
+      all_list.push(animal);
     }
   }
-  return counter;
+ 
+  return all_list;
 }
 
-const result = countDigits("ad2a54y79wet0sfgb9");
-console.log(result);
-
+const javob = findAnimals("dgoatc");
+console.log(javob);
 
 // ===========================================================================================================
 

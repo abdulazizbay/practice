@@ -42,7 +42,9 @@ def calculate(*args):
 
 calculate(1, 7, 2, 3)
 
-# **kwargs => dictionary 
+# **kwargs => dictionary
+
+
 def introduce(**kwargs):
     print(f"type of (**kwargs) value: {type(kwargs)}")
     print(f"Hi, i am {kwargs['name']} and i am {kwargs['age']} years old")
@@ -51,7 +53,19 @@ def introduce(**kwargs):
 introduce(name="Justin", age=28)
 introduce(name="Shawn", age=30, single=True)
 
+
 def greeting(*args, **kwargs):
     print("args:", args)
     print("kwargs:", kwargs)
+
+
 greeting("hi", True, 10, name="Adam", age=42)
+
+print("=== zip ===")
+
+tuple = (1, 2, 3, 4)
+tuple2 = ("a", "b", "c")
+zipped = zip(tuple, tuple2)
+print("zipped", zipped)
+result = list(zipped)
+print(result)

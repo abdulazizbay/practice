@@ -41,3 +41,12 @@ def calculate(*args):
 
 
 calculate(1, 7, 2, 3)
+
+# **kwargs => dictionary 
+def introduce(**kwargs):
+    print(f"type of (**kwargs) value: {type(kwargs)}")
+    print(f"Hi, i am {kwargs['name']} and i am {kwargs['age']} years old")
+
+
+introduce(name="Justin", age=28)
+introduce(name="Shawn", age=30, single=True)

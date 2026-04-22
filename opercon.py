@@ -29,3 +29,42 @@ print(id(c), id(d), id(e))
 
 print("c is d", c is d)
 print("c is e", c is e)
+
+print(" === Conditions ===")
+
+x = 5
+if x > 5:
+    print("Case A")
+elif x > 10:
+    print("Case B")
+else:
+    print("Case C")
+
+print("----")
+age = 20
+# person = None
+
+# if age > 16:
+#     person = "adult"
+# else:
+#     person = "child"
+# print(person)
+
+# Ternery operator
+person = "adult" if age > 18 else "minor"
+print("person: ", person)
+
+print("-----")
+is_student = True
+is_admin = False
+is_guest = False
+is_parent = True
+
+if not is_student:
+    print("wellcome here, do u want to be a student")
+elif is_admin:
+    print("please go to this office")
+elif is_guest or is_parent:
+    print("waiting room is over there")
+else:
+    print("ETC")

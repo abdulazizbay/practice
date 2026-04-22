@@ -28,4 +28,9 @@ git pull origin master
 - Operations
 - Conditions
 - Loops
+- Tuple 
+- List  
+- Array 
+- Comprehension 
+- Debugging 
 - ...

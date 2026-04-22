@@ -1,3 +1,22 @@
+// C-TASK (NodeJS)
+
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
+function checkContent(a, b) {
+  if (a.length !== b.length) {
+    return false
+  }
+
+  const sortedA = a.split("").sort().join("");
+  const sortedB = b.split("").sort().join("");
+
+  return sortedA === sortedB;
+}
+
+const result = checkContent("mitgroup", "gmtiprou");
+console.log(result); 
+// ===========================================================================================================
 // B-TASK (Nodejs)
 
 // Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda
@@ -19,50 +38,7 @@
 // const result = countDigits("ad2a54y79wet0sfgb9");
 // console.log(result);
 
-// =====================================================
 
-// Challenge Task Animal Challenge
-const animal_list = [
-  "fox",
-  "ant",
-  "bird",
-  "lion",
-  "wolf",
-  "deer",
-  "bear",
-  "frog",
-  "hen",
-  "mole",
-  "duck",
-  "goat",
-  "dog",
-  "cat",
-  "bat",
-  "cock",
-  "cow",
-];
-
-function findAnimals(txt) {
-  let all_list = [];
-  for (const animal of animal_list) {
-    let isMatch = true;
-    console.log(animal);
-     for (const char of animal) {
-      console.log(char);
-      if (!txt.includes(char)) {
-        isMatch = false;
-      }
-    } 
-    if (isMatch) {
-      all_list.push(animal);
-    }
-  }
- 
-  return all_list;
-}
-
-const javob = findAnimals("dgoatc");
-console.log(javob);
 
 // ===========================================================================================================
 

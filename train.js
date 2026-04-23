@@ -1,21 +1,38 @@
-// C-TASK (NodeJS)
+// D-TASK (NodeJS)
 
-// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
-// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+// Shunday function tuzingki unga integerlardan iborat array pass bolsin va
+//  function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 
-function checkContent(a, b) {
-  if (a.length !== b.length) {
-    return false
-  }
-
-  const sortedA = a.split("").sort().join("");
-  const sortedB = b.split("").sort().join("");
-
-  return sortedA === sortedB;
+function getHighestIndex(arr){
+  const sortedArray = [...arr].sort((a,b)=> b - a)
+  const biggest = sortedArray[0]
+  
+  return arr.indexOf(biggest)
+  
 }
 
-const result = checkContent("mitgroup", "gmtiprou");
-console.log(result); 
+const result = getHighestIndex([5, 21, 12, 21, 8])
+console.log(result );
+
+// // C-TASK (NodeJS)
+
+// // Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+// // MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
+// function checkContent(a, b) {
+//   if (a.length !== b.length) {
+//     return false
+//   }
+
+//   const sortedA = a.split("").sort().join("");
+//   const sortedB = b.split("").sort().join("");
+
+//   return sortedA === sortedB;
+// }
+
+// const result = checkContent("mitgroup", "gmtiprou");
+// console.log(result); 
 // ===========================================================================================================
 // B-TASK (Nodejs)
 

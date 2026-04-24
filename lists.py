@@ -24,8 +24,8 @@ print("c: ", c)
 print("d: ", d)
 
 print("=== list methods ===")
-# methods 
-# mutable => append() insert() pop() remove() clear() sort() 
+# methods
+# mutable => append() insert() pop() remove() clear() sort()
 # immutable => index() sorted
 
 letters = ["a", "d", "b"]
@@ -66,8 +66,33 @@ print("sort default: ", numbers)
 numbers.sort(reverse=True)
 print("sort revers: ", numbers)
 
-# sorted 
+# sorted
 numbs = [2, 20, 12, 100]
 new_numbs = sorted(numbs)
 print(f"sorted numbs: {numbs} and new numbs: {new_numbs}")
 
+# lamda function
+# labmda is small anonymous function
+print("=== lambda function ===")
+
+
+def calculate(x, y):
+    return x * y
+
+
+result = calculate(3, 5)
+print("result: ", result)
+
+people = [
+    ("Robert", 20),
+    ("Steve", 19),
+    ("Joseph", 25),
+    ("Michael ", 30),
+    ("Ali", 23),
+]
+people.sort()
+print(people)
+
+# sort  by age via lambda
+people.sort(key=lambda person: person[1])
+print("people2: ", people)

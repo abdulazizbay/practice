@@ -1,13 +1,36 @@
+// F-TASK (NodeJS)
+
+// Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir
+//  hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+// MASALAN: getReverse("hello") return true return qilad
+
+function findDoublers(str) {
+  
+  const letters_obj = {};
+  for (let i = 0; i < str.length; i++) {
+   
+    
+    if (letters_obj[str[i]]) {
+      return true
+    } else {
+      letters_obj[str[i]] = 1;
+    }
+  }
+  return false
+}
+
+console.log(findDoublers("hello"));
+
 // E-TASK (NodeJS)
 
 // Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
 // MASALAN: getReverse("hello") return qilsin "olleh"
 
-function getReverse(str){
-  return str.split("").reverse().join("")
-}
+// function getReverse(str){
+//   return str.split("").reverse().join("")
+// }
 
-console.log(getReverse("hello"))
+// console.log(getReverse("hello"))
 
 // D-TASK (NodeJS)
 
@@ -18,9 +41,9 @@ console.log(getReverse("hello"))
 // function getHighestIndex(arr){
 //   const sortedArray = [...arr].sort((a,b)=> b - a)
 //   const biggest = sortedArray[0]
-  
+
 //   return arr.indexOf(biggest)
-  
+
 // }
 
 // const result = getHighestIndex([5, 21, 12, 21, 8])
@@ -43,7 +66,7 @@ console.log(getReverse("hello"))
 // }
 
 // const result = checkContent("mitgroup", "gmtiprou");
-// console.log(result); 
+// console.log(result);
 // ===========================================================================================================
 // B-TASK (Nodejs)
 
@@ -65,8 +88,6 @@ console.log(getReverse("hello"))
 
 // const result = countDigits("ad2a54y79wet0sfgb9");
 // console.log(result);
-
-
 
 // ===========================================================================================================
 

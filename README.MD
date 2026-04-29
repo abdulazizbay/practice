@@ -34,3 +34,14 @@ git pull origin master
 - Comprehension 
 - Debugging 
 - ...
+
+# Pip Commands:
+```
+
+    pip list 
+    pip install pillow 
+    pip unistall pillow 
+    pip show pillow 
+    pip freeze > requirements.txt
+    
+```

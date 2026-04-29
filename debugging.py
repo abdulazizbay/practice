@@ -32,7 +32,21 @@ print("=== package manager & external package ===")
 '''
 
 
-with Image.open("./material/bgImage.jpg") as img_obj:
-    resized_img = img_obj.resize((200, 200))
-    resized_img.show()
-    resized_img.save("./material/sample.png")
+# with Image.open("./material/bgImage.jpg") as img_obj:
+#     resized_img = img_obj.resize((200, 200))
+#     resized_img.show()
+#     resized_img.save("./material/sample.png")
+
+
+print("=== Debugging ===")
+
+
+def get_summary(*args):
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount # solve the bug via debugging 
+
+
+result = get_summary(1, 2, 4, 5, 12)
+print(result)

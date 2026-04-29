@@ -1,9 +1,9 @@
-
+from PIL import Image
 
 print("=== python packages and core package ===")
 
 # # core packages - no need for pip install
-# import turtle 
+# import turtle
 # t = turtle.Turtle()
 # t.shape("turtle")
 # t.speed(2)
@@ -19,9 +19,20 @@ try:
 finally:
     my_file.close()
 
-# with 
+# with
 with open("./material/message.txt", "r") as your_file:
     your_content = your_file.read()
     print("ur content:", your_content)
 
 print("Done")
+
+print("=== package manager & external package ===")
+'''
+    Package managers: pip, pipenv, npm, yarn, composer, brew
+'''
+
+
+with Image.open("./material/bgImage.jpg") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("./material/sample.png")

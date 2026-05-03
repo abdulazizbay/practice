@@ -1,3 +1,25 @@
+// H-TASK (NodeJS)
+
+// shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib,
+//  faqat positive qiymatlarni olib string holatda return qilsin
+// MASALAN: getPositive([1, -4, 2]) return qiladi "12"
+function getPositive(nums) {
+  return nums.filter((num) => num > 0).join("");
+}
+
+console.log(getPositive([1, -4, 2]));
+
+// function getPositive(nums){
+//         const arr = []
+//         for(let num of nums){
+//                 if (num > 0) {
+//                         arr.push(num)
+//                 }
+//         }
+//         return arr.join("")
+// }
+
+// console.log(getPositive([1, -4, 2]))
 
 // F-TASK (NodeJS)
 
@@ -6,11 +28,10 @@
 // MASALAN: getReverse("hello") return true return qilad
 
 // function findDoublers(str) {
-  
+
 //   const letters_obj = {};
 //   for (let i = 0; i < str.length; i++) {
-   
-    
+
 //     if (letters_obj[str[i]]) {
 //       return true
 //     } else {
